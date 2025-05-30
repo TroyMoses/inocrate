@@ -1,6 +1,6 @@
 # Inocrate - Innovative Technology Solutions
 
-<!-- ![Inocrate Logo](public/banner.png) -->
+![Inocrate Logo](public/banner.png)
 
 ![Inocrate](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript)
