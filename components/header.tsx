@@ -10,6 +10,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import Image from "next/image";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,53 +20,67 @@ export default function Header() {
       <div className="container mx-auto px-4 lg:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
-          <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center">
+          {/* <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center">
             <span className="text-white font-bold text-lg">I</span>
           </div>
           <span className="text-xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
             Inocrate
-          </span>
+          </span> */}
+          {/* Image of the logo */}
+          <Image
+            alt="Inocrate Logo"
+            height={200}
+            width={200}
+            src={"/logo.png"}
+            className="object-cover"
+          />
         </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           <Link
             href="/"
-            className="text-gray-700 hover:text-orange-500 transition-colors"
+            className="text-gray-700 hover:text-blue-900 transition-colors"
           >
             Home
           </Link>
           <Link
             href="/about"
-            className="text-gray-700 hover:text-orange-500 transition-colors"
+            className="text-gray-700 hover:text-blue-900 transition-colors"
           >
             About
           </Link>
           <DropdownMenu>
-            <DropdownMenuTrigger className="flex items-center text-gray-700 hover:text-orange-500 transition-colors">
+            <DropdownMenuTrigger className="flex items-center text-gray-700 hover:text-bue-900 transition-colors cursor-pointer">
               Services <ChevronDown className="ml-1 h-4 w-4" />
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuItem asChild>
-                <Link href="/services/education">Education Systems</Link>
+                <Link href="/services/education" className="cursor-pointer">
+                  Education Systems
+                </Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link href="/services/fintech">Fintech Solutions</Link>
+                <Link href="/services/fintech" className="cursor-pointer">
+                  Fintech Solutions
+                </Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link href="/services/agritech">Agritech Platforms</Link>
+                <Link href="/services/agritech" className="cursor-pointer">
+                  Agritech Platforms
+                </Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
           <Link
             href="/portfolio"
-            className="text-gray-700 hover:text-orange-500 transition-colors"
+            className="text-gray-700 hover:text-blue-900 transition-colors"
           >
             Portfolio
           </Link>
           <Link
             href="/contact"
-            className="text-gray-700 hover:text-orange-500 transition-colors"
+            className="text-gray-700 hover:text-blue-900 transition-colors"
           >
             Contact
           </Link>
@@ -73,7 +88,7 @@ export default function Header() {
 
         {/* CTA Button */}
         <div className="hidden md:flex">
-          <Button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white">
+          <Button className="bg-gradient-to-r from-blue-500 to-blue-900 hover:from-blue-900 hover:to-blue-500 text-white cursor-pointer transition-all duration-300">
             Get Started
           </Button>
         </div>
@@ -97,34 +112,36 @@ export default function Header() {
           <nav className="flex flex-col space-y-4 p-4">
             <Link
               href="/"
-              className="text-gray-700 hover:text-orange-500 transition-colors"
+              className="text-gray-700 hover:text-blue-900 transition-colors cursor-pointer"
             >
               Home
             </Link>
             <Link
               href="/about"
-              className="text-gray-700 hover:text-orange-500 transition-colors"
+              className="text-gray-700 hover:text-blue-900 transition-colors cursor-pointer"
             >
               About
             </Link>
             <div className="space-y-2">
-              <span className="text-gray-700 font-medium">Services</span>
+              <span className="text-gray-700 font-medium cursor-pointer">
+                Services
+              </span>
               <div className="pl-4 space-y-2">
                 <Link
                   href="/services/education"
-                  className="block text-gray-600 hover:text-orange-500 transition-colors"
+                  className="block text-gray-600 hover:text-blue-900 transition-colors cursor-pointer"
                 >
                   Education Systems
                 </Link>
                 <Link
                   href="/services/fintech"
-                  className="block text-gray-600 hover:text-orange-500 transition-colors"
+                  className="block text-gray-600 hover:text-blue-900 transition-colors cursor-pointer"
                 >
                   Fintech Solutions
                 </Link>
                 <Link
                   href="/services/agritech"
-                  className="block text-gray-600 hover:text-orange-500 transition-colors"
+                  className="block text-gray-600 hover:text-blue-900 transition-colors cursor-pointer"
                 >
                   Agritech Platforms
                 </Link>
@@ -132,17 +149,17 @@ export default function Header() {
             </div>
             <Link
               href="/portfolio"
-              className="text-gray-700 hover:text-orange-500 transition-colors"
+              className="text-gray-700 hover:text-blue-900 transition-colors cursor-pointer"
             >
               Portfolio
             </Link>
             <Link
               href="/contact"
-              className="text-gray-700 hover:text-orange-500 transition-colors"
+              className="text-gray-700 hover:text-blue-900 transition-colors cursor-pointer"
             >
               Contact
             </Link>
-            <Button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white w-full">
+            <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white w-full cursor-pointer">
               Get Started
             </Button>
           </nav>

@@ -37,7 +37,7 @@ export default function HeroCarousel({ slides }: HeroCarouselProps) {
   };
 
   return (
-    <div className="relative h-[70vh] overflow-hidden">
+    <div className="relative h-[80vh] md:h-[90vh] overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -52,20 +52,20 @@ export default function HeroCarousel({ slides }: HeroCarouselProps) {
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30" />
 
           <div className="relative h-full flex items-center">
-            <div className="container mx-auto px-4">
-              <div className="max-w-2xl text-white">
-                <div className="inline-block bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 rounded-full text-sm font-medium mb-4">
+            <div className="container mx-auto px-4 text-center">
+              <div className="max-w-2xl text-white text-center mx-auto">
+                <div className="inline-block bg-gradient-to-r from-blue-700 to-blue-900 text-white px-4 py-2 rounded-full text-sm font-medium mb-4">
                   {slide.subtitle}
                 </div>
-                <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                <h1 className="text-3xl md:text-6xl font-bold mb-6 leading-tight">
                   {slide.title}
                 </h1>
-                <p className="text-xl mb-8 text-gray-200 leading-relaxed">
+                <p className="text-base md:text-xl mb-8 text-gray-200 leading-relaxed">
                   {slide.description}
                 </p>
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-8 py-3"
+                  className="bg-gradient-to-r from-blue-700 to-blue-800 hover:from-blue-800 hover:to-blue-900 text-white px-8 py-3 cursor-pointer"
                 >
                   {slide.ctaText}
                 </Button>
@@ -79,20 +79,20 @@ export default function HeroCarousel({ slides }: HeroCarouselProps) {
       <button
         onClick={prevSlide}
         title="Previous Slide"
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full transition-colors"
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full transition-colors cursor-pointer"
       >
         <ChevronLeft className="h-6 w-6" />
       </button>
       <button
         onClick={nextSlide}
         title="Next Slide"
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full transition-colors"
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full transition-colors cursor-pointer"
       >
         <ChevronRight className="h-6 w-6" />
       </button>
 
       {/* Dots Indicator */}
-      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2 cursor-pointer">
         {slides.map((_, index) => (
           <button
             key={index}
