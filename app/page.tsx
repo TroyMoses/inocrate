@@ -19,11 +19,11 @@ import Link from "next/link";
 
 const heroSlides = [
   {
-    title: "Innovative Systems for Modern Education",
+    title: "Systems for Modern Education",
     subtitle: "EDUCATION TECHNOLOGY",
     description:
-      "Transform learning experiences with our cutting-edge educational management systems and digital learning platforms.",
-    backgroundImage: "/placeholder.svg?height=600&width=1200",
+      "Transform learning experiences with cutting-edge educational management systems and digital learning platforms.",
+    backgroundImage: "/images/bg2.jpg",
     ctaText: "Explore Education Solutions",
     ctaLink: "/services/education",
   },
@@ -32,7 +32,7 @@ const heroSlides = [
     subtitle: "FINANCIAL TECHNOLOGY",
     description:
       "Secure, scalable, and efficient financial technology solutions that drive digital transformation in the finance sector.",
-    backgroundImage: "/placeholder.svg?height=600&width=1200",
+    backgroundImage: "/images/bg1.jpg",
     ctaText: "Discover Fintech Services",
     ctaLink: "/services/fintech",
   },
@@ -41,7 +41,7 @@ const heroSlides = [
     subtitle: "AGRITECH INNOVATION",
     description:
       "Empowering farmers with intelligent agricultural systems that optimize productivity and sustainability.",
-    backgroundImage: "/placeholder.svg?height=600&width=1200",
+    backgroundImage: "/images/agritech.jpg",
     ctaText: "Learn About Agritech",
     ctaLink: "/services/agritech",
   },
@@ -132,15 +132,15 @@ export default function HomePage() {
       <HeroCarousel slides={heroSlides} />
 
       {/* What We Do Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-10 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <Badge className="bg-gradient-to-r from-orange-500 to-red-500 text-white mb-4">
+          <div className="text-center mb-8 md:mb-10">
+            <Badge className="bg-gradient-to-r from-blue-700 to-blue-900 text-white mb-4">
               WHAT WE DO
             </Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">
               We Offer Creative{" "}
-              <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent">
                 Technological Solutions
               </span>
             </h2>
@@ -172,14 +172,14 @@ export default function HomePage() {
                         key={idx}
                         className="flex items-center text-sm text-gray-600"
                       >
-                        <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                        <CheckCircle className="h-4 w-4 text-blue-500 mr-2" />
                         {feature}
                       </li>
                     ))}
                   </ul>
                   <Button
                     variant="outline"
-                    className="group-hover:bg-gradient-to-r group-hover:from-orange-500 group-hover:to-red-500 group-hover:text-white group-hover:border-transparent transition-all"
+                    className="group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:to-blue-600 group-hover:text-white group-hover:border-transparent transition-all cursor-pointer"
                   >
                     Learn More <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -191,7 +191,7 @@ export default function HomePage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-gradient-to-r from-orange-500 to-red-500 text-white">
+      <section className="py-10 md:py-20 bg-gradient-to-r from-blue-700 to-blue-900 text-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
@@ -199,10 +199,10 @@ export default function HomePage() {
                 <div className="flex justify-center mb-4">
                   <stat.icon className="h-12 w-12" />
                 </div>
-                <div className="text-4xl md:text-5xl font-bold mb-2">
+                <div className="text-3xl md:text-5xl font-bold mb-2">
                   {stat.number}
                 </div>
-                <div className="text-orange-100">{stat.label}</div>
+                <div className="text-blue-100">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -210,16 +210,16 @@ export default function HomePage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20">
+      <section className="py-10 md:py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Badge className="bg-gradient-to-r from-orange-500 to-red-500 text-white mb-4">
+              <Badge className="bg-gradient-to-r from-blue-700 to-blue-900 text-white mb-4">
                 WHY CHOOSE US
               </Badge>
-              <h2 className="text-4xl font-bold mb-6">
+              <h2 className="text-[28px] md:text-4xl font-bold mb-4 md:mb-6">
                 Innovative, Secure{" "}
-                <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent">
                   Technology Solutions
                 </span>
               </h2>
@@ -232,19 +232,19 @@ export default function HomePage() {
               </p>
               <div className="space-y-4">
                 <div className="flex items-center">
-                  <CheckCircle className="h-6 w-6 text-green-500 mr-3" />
+                  <CheckCircle className="h-6 w-6 text-blue-500 mr-3" />
                   <span>Cutting-edge technology stack</span>
                 </div>
                 <div className="flex items-center">
-                  <CheckCircle className="h-6 w-6 text-green-500 mr-3" />
+                  <CheckCircle className="h-6 w-6 text-blue-500 mr-3" />
                   <span>24/7 technical support</span>
                 </div>
                 <div className="flex items-center">
-                  <CheckCircle className="h-6 w-6 text-green-500 mr-3" />
+                  <CheckCircle className="h-6 w-6 text-blue-500 mr-3" />
                   <span>Scalable and secure solutions</span>
                 </div>
                 <div className="flex items-center">
-                  <CheckCircle className="h-6 w-6 text-green-500 mr-3" />
+                  <CheckCircle className="h-6 w-6 text-blue-500 mr-3" />
                   <span>Industry expertise and experience</span>
                 </div>
               </div>
@@ -257,9 +257,7 @@ export default function HomePage() {
                 <div className="text-gray-600">Projects</div>
               </Card>
               <Card className="text-center p-6 border-2 border-green-100">
-                <div className="text-4xl font-bold text-green-500 mb-2">
-                  25+
-                </div>
+                <div className="text-4xl font-bold text-blue-500 mb-2">25+</div>
                 <div className="text-gray-600">Clients</div>
               </Card>
               <Card className="text-center p-6 border-2 border-blue-100">
@@ -278,15 +276,15 @@ export default function HomePage() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20 bg-gray-50">
+      <section className="pt-10 pb-10 md:pb-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="bg-gradient-to-r from-orange-500 to-red-500 text-white mb-4">
+            <Badge className="bg-gradient-to-r from-blue-700 to-blue-900 text-white mb-4">
               WHAT CLIENTS SAY
             </Badge>
-            <h2 className="text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold">
               Clients Say About Our{" "}
-              <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent">
                 Services
               </span>
             </h2>
@@ -310,7 +308,7 @@ export default function HomePage() {
                     {"'"}
                   </p>
                   <div className="flex items-center">
-                    <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                    <div className="w-12 h-12 bg-gradient-to-r from-blue-700 to-blue-900 rounded-full flex items-center justify-center text-white font-bold mr-4">
                       {testimonial.name.charAt(0)}
                     </div>
                     <div>
@@ -328,9 +326,9 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-green-600 to-green-700 text-white">
+      <section className="py-10 md:py-20 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Transform Your Business?
           </h2>
           <p className="text-xl mb-8 text-green-100 max-w-2xl mx-auto">
@@ -340,14 +338,14 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
-              className="bg-white text-green-600 hover:bg-gray-100"
+              className="bg-white text-blue-600 hover:bg-gray-100"
             >
               <Link href="/contact">Get Started Today</Link>
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-green-600"
+              className="border-white text-gray-500 hover:bg-white hover:text-blue-600"
             >
               <Link href="/portfolio">View Our Work</Link>
             </Button>

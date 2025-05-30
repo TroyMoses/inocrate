@@ -106,12 +106,12 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Badge className="bg-gradient-to-r from-orange-500 to-red-500 text-white mb-4">
+              <Badge className="bg-gradient-to-r from-blue-600 to-purple-600 text-white mb-4">
                 WHO WE ARE
               </Badge>
               <h2 className="text-4xl font-bold mb-6">
                 Empowering Industries Through{" "}
-                <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                   Innovative Technology
                 </span>
               </h2>
@@ -128,7 +128,7 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg transform rotate-3"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg transform rotate-3"></div>
               <Image
                 width={600}
                 height={400}
@@ -214,12 +214,12 @@ export default function AboutPage() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="bg-gradient-to-r from-orange-500 to-red-500 text-white mb-4">
+            <Badge className="bg-gradient-to-r from-blue-600 to-purple-600 text-white mb-4">
               MEET THE TEAM
             </Badge>
             <h2 className="text-4xl font-bold mb-6">
               Meet Our Hard Working{" "}
-              <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 Experts
               </span>
             </h2>
@@ -248,7 +248,7 @@ export default function AboutPage() {
                 </div>
                 <CardContent className="p-6 text-center">
                   <h3 className="text-xl font-bold mb-2">{member.name}</h3>
-                  <p className="text-orange-500 font-medium mb-3">
+                  <p className="text-blue-500 font-medium mb-3">
                     {member.role}
                   </p>
                   <p className="text-gray-600 text-sm">{member.description}</p>
@@ -260,24 +260,24 @@ export default function AboutPage() {
       </section>
 
       {/* Company Stats */}
-      <section className="py-20 bg-gradient-to-r from-green-600 to-green-700 text-white">
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-4xl md:text-5xl font-bold mb-2">5+</div>
-              <div className="text-green-100">Years Experience</div>
+              <div className="text-blue-100">Years Experience</div>
             </div>
             <div>
               <div className="text-4xl md:text-5xl font-bold mb-2">50+</div>
-              <div className="text-green-100">Projects Completed</div>
+              <div className="text-blue-100">Projects Completed</div>
             </div>
             <div>
               <div className="text-4xl md:text-5xl font-bold mb-2">25+</div>
-              <div className="text-green-100">Happy Clients</div>
+              <div className="text-blue-100">Happy Clients</div>
             </div>
             <div>
               <div className="text-4xl md:text-5xl font-bold mb-2">3</div>
-              <div className="text-green-100">Industry Sectors</div>
+              <div className="text-blue-100">Industry Sectors</div>
             </div>
           </div>
         </div>

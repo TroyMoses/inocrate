@@ -8,47 +8,54 @@ import {
   Phone,
   MapPin,
 } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-green-600 to-green-700 text-white">
-      <div className="container mx-auto px-4 py-12">
+    <footer className="bg-gray-50 text-gray-800">
+      <div className="container mx-auto px-4 py-8 md:py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">I</span>
-              </div>
-              <span className="text-xl font-bold">Inocrate</span>
+              <Link href="/" className="flex items-center space-x-2">
+                {/* Image of the logo */}
+                <Image
+                  alt="Inocrate Logo"
+                  height={200}
+                  width={200}
+                  src={"/logo.png"}
+                  className="object-cover"
+                />
+              </Link>
             </div>
-            <p className="text-green-100 text-sm leading-relaxed">
+            <p className="text-gray-600 text-sm leading-relaxed">
               An innovative technology solutions company specializing in
               building systems for schools, fintech, and agritech sectors. We
               drive digital transformation through cutting-edge solutions.
             </p>
             <div className="flex space-x-4">
               <Link
-                href="#"
-                className="text-green-200 hover:text-white transition-colors"
+                href="https://www.facebook.com"
+                className="text-gray-500 hover:text-blue-600 transition-colors"
               >
                 <Facebook className="h-5 w-5" />
               </Link>
               <Link
-                href="#"
-                className="text-green-200 hover:text-white transition-colors"
+                href="https://www.twitter.com"
+                className="text-gray-500 hover:text-blue-600 transition-colors"
               >
                 <Twitter className="h-5 w-5" />
               </Link>
               <Link
-                href="#"
-                className="text-green-200 hover:text-white transition-colors"
+                href="https://www.linkedin.com"
+                className="text-gray-500 hover:text-blue-600 transition-colors"
               >
                 <Linkedin className="h-5 w-5" />
               </Link>
               <Link
-                href="#"
-                className="text-green-200 hover:text-white transition-colors"
+                href="https://www.instagram.com"
+                className="text-gray-500 hover:text-blue-600 transition-colors"
               >
                 <Instagram className="h-5 w-5" />
               </Link>
@@ -57,14 +64,12 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-orange-300">
-              Quick Links
-            </h3>
+            <h3 className="text-lg font-semibold text-blue-600">Quick Links</h3>
             <ul className="space-y-2">
               <li>
                 <Link
                   href="/"
-                  className="text-green-200 hover:text-white transition-colors"
+                  className="text-gray-600 hover:text-blue-600 transition-colors"
                 >
                   Home
                 </Link>
@@ -72,7 +77,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/about"
-                  className="text-green-200 hover:text-white transition-colors"
+                  className="text-gray-600 hover:text-blue-600 transition-colors"
                 >
                   About Us
                 </Link>
@@ -80,7 +85,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/portfolio"
-                  className="text-green-200 hover:text-white transition-colors"
+                  className="text-gray-600 hover:text-blue-600 transition-colors"
                 >
                   Portfolio
                 </Link>
@@ -88,7 +93,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/contact"
-                  className="text-green-200 hover:text-white transition-colors"
+                  className="text-gray-600 hover:text-blue-600 transition-colors"
                 >
                   Contact Us
                 </Link>
@@ -98,14 +103,14 @@ export default function Footer() {
 
           {/* Services */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-orange-300">
+            <h3 className="text-lg font-semibold text-blue-600">
               Our Services
             </h3>
             <ul className="space-y-2">
               <li>
                 <Link
                   href="/services/education"
-                  className="text-green-200 hover:text-white transition-colors"
+                  className="text-gray-600 hover:text-blue-600 transition-colors"
                 >
                   Education Systems
                 </Link>
@@ -113,7 +118,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/services/fintech"
-                  className="text-green-200 hover:text-white transition-colors"
+                  className="text-gray-600 hover:text-blue-600 transition-colors"
                 >
                   Fintech Solutions
                 </Link>
@@ -121,7 +126,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/services/agritech"
-                  className="text-green-200 hover:text-white transition-colors"
+                  className="text-gray-600 hover:text-blue-600 transition-colors"
                 >
                   Agritech Platforms
                 </Link>
@@ -131,34 +136,37 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-orange-300">
+            <h3 className="text-lg font-semibold text-blue-600">
               Get In Touch
             </h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <MapPin className="h-5 w-5 text-orange-300" />
-                <span className="text-green-200 text-sm">
-                  123 Innovation Street, Tech City, TC 12345
+                <MapPin className="h-5 w-5 text-red-500" />
+                <span className="text-gray-600 text-sm">
+                  Ntinda, Kigoowa Road. Kampala, Uganda
                 </span>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-orange-300" />
-                <span className="text-green-200 text-sm">
-                  +1 (555) 123-4567
-                </span>
+                <Phone className="h-5 w-5 text-red-500" />
+                <a href="tel:+256701618653" className="text-gray-600 text-sm">
+                  +256 701 618 653
+                </a>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-orange-300" />
-                <span className="text-green-200 text-sm">
+                <Mail className="h-5 w-5 text-red-500" />
+                <a
+                  href="mailto:info@inocrate.com"
+                  className="text-gray-600 text-sm"
+                >
                   info@inocrate.com
-                </span>
+                </a>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-green-500 mt-8 pt-8 text-center">
-          <p className="text-green-200 text-sm">
+        <div className="border-t border-gray-400 mt-8 pt-8 text-center">
+          <p className="text-gray-700 text-sm">
             © {new Date().getFullYear()} Inocrate. All Rights Reserved.
           </p>
         </div>
