@@ -399,21 +399,21 @@ export default function ContactPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-10 md:py-20 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Transform Your Business?
+            Ready to Start Your Project?
           </h2>
           <p className="text-xl mb-8 text-green-100 max-w-2xl mx-auto">
-            Let{"'"}s discuss how our innovative solutions can drive your
-            digital transformation
+            Let{"'"}s schedule a consultation to discuss your requirements and
+            explore how we can help bring your vision to life.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
               className="bg-white text-blue-600 hover:bg-gray-100"
             >
-              <Link href="/contact">Get Started Today</Link>
+              Schedule Consultation
             </Button>
             <Button
               size="lg"

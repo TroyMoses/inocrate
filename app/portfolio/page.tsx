@@ -20,11 +20,11 @@ import Image from "next/image";
 
 const heroSlides = [
   {
-    title: "Our Portfolio of Success",
+    title: "Our Portfolio",
     subtitle: "FEATURED PROJECTS",
     description:
-      "Explore our innovative solutions across education, fintech, and agritech sectors that have transformed businesses and communities.",
-    backgroundImage: "/placeholder.svg?height=600&width=1200",
+      "Explore our innovative solutions across education, fintech, etc that have transformed businesses and communities.",
+    backgroundImage: "/images/bg2.jpg",
     ctaText: "View All Projects",
     ctaLink: "#projects",
   },
@@ -33,7 +33,7 @@ const heroSlides = [
     subtitle: "REAL IMPACT",
     description:
       "Discover how our technology solutions have driven digital transformation and created lasting value for our clients.",
-    backgroundImage: "/placeholder.svg?height=600&width=1200",
+    backgroundImage: "/images/bg3.jpg",
     ctaText: "Explore Case Studies",
     ctaLink: "#case-studies",
   },
@@ -203,15 +203,15 @@ export default function PortfolioPage() {
       <HeroCarousel slides={heroSlides} />
 
       {/* Portfolio Overview */}
-      <section className="py-20">
+      <section className="pt-10 pb-10 md:pt-20 md:pb-10">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <Badge className="bg-gradient-to-r from-orange-500 to-red-500 text-white mb-4">
+          <div className="text-center mb-4">
+            <Badge className="bg-gradient-to-r from-blue-700 to-blue-900 text-white mb-4">
               OUR PORTFOLIO
             </Badge>
-            <h2 className="text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Innovative Solutions{" "}
-              <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent">
                 Driving Success
               </span>
             </h2>
@@ -245,18 +245,18 @@ export default function PortfolioPage() {
       </section>
 
       {/* Projects Grid */}
-      <section id="projects" className="py-20 bg-gray-50">
+      <section id="projects" className="py-10 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-6">
             <h3 className="text-3xl font-bold mb-8">Featured Projects</h3>
 
             {/* Category Filter */}
-            <div className="flex flex-wrap justify-center gap-4 mb-12">
+            <div className="flex flex-wrap justify-center gap-4 mb-6">
               {categories.map((category) => (
                 <Button
                   key={category}
                   variant="outline"
-                  className="hover:bg-gradient-to-r hover:from-orange-500 hover:to-red-500 hover:text-white hover:border-transparent transition-all"
+                  className="hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-700 hover:text-white hover:border-transparent transition-all cursor-pointer"
                 >
                   {category}
                 </Button>
@@ -352,15 +352,15 @@ export default function PortfolioPage() {
       </section>
 
       {/* Case Studies Section */}
-      <section id="case-studies" className="py-20">
+      <section id="case-studies" className="py-10 md:py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <Badge className="bg-gradient-to-r from-orange-500 to-red-500 text-white mb-4">
+          <div className="text-center mb-8">
+            <Badge className="bg-gradient-to-r from-blue-700 to-blue-900 text-white mb-4">
               CASE STUDIES
             </Badge>
-            <h2 className="text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Success Stories{" "}
-              <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent">
                 That Inspire
               </span>
             </h2>
@@ -464,9 +464,9 @@ export default function PortfolioPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-orange-500 to-red-500 text-white">
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Create Your Success Story?
           </h2>
           <p className="text-xl mb-8 text-orange-100 max-w-2xl mx-auto">
@@ -483,7 +483,7 @@ export default function PortfolioPage() {
             <Button
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-orange-500"
+              className="border-white text-gray-500 hover:bg-white hover:text-orange-500"
             >
               <Link href="/contact">Schedule Consultation</Link>
             </Button>
