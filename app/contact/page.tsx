@@ -25,16 +25,16 @@ const heroSlides = [
     subtitle: "CONTACT US",
     description:
       "Ready to transform your business with innovative technology solutions? Let's discuss your project and explore how we can help you achieve your goals.",
-    backgroundImage: "/placeholder.svg?height=600&width=1200",
+    backgroundImage: "/images/bg2.jpg",
     ctaText: "Start Conversation",
     ctaLink: "#contact-form",
   },
   {
-    title: "Let's Build Something Amazing Together",
+    title: "Let's Build Amazing Things Together",
     subtitle: "COLLABORATION",
     description:
       "From initial consultation to project delivery, we're here to support you every step of the way with our expertise and innovative solutions.",
-    backgroundImage: "/placeholder.svg?height=600&width=1200",
+    backgroundImage: "/images/bg-educ.jpg",
     ctaText: "Schedule Meeting",
     ctaLink: "#contact-form",
   },
@@ -44,13 +44,13 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Our Location",
-    details: ["123 Innovation Street", "Tech City, TC 12345", "United States"],
+    details: ["Ntinda, Kigoowa Road. Kampala, Uganda"],
     color: "from-blue-500 to-purple-600",
   },
   {
     icon: Phone,
     title: "Phone Numbers",
-    details: ["+1 (555) 123-4567", "+1 (555) 987-6543", "Mon-Fri 9AM-6PM EST"],
+    details: ["+256 701 618 653", "+256 703 196 362", "Mon-Fri 9AM-6PM EST"],
     color: "from-green-500 to-teal-600",
   },
   {
@@ -122,15 +122,15 @@ export default function ContactPage() {
       <HeroCarousel slides={heroSlides} />
 
       {/* Contact Information */}
-      <section className="py-20">
+      <section className="py-10 md:py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="bg-gradient-to-r from-orange-500 to-red-500 text-white mb-4">
+            <Badge className="bg-gradient-to-r from-blue-500 to-blue-900 text-white mb-4">
               GET IN TOUCH
             </Badge>
             <h2 className="text-4xl font-bold mb-6">
               We{"'"}d Love to{" "}
-              <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-500 to-blue-900 bg-clip-text text-transparent">
                 Hear From You
               </span>
             </h2>
@@ -141,7 +141,7 @@ export default function ContactPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {contactInfo.map((info, index) => (
               <Card
                 key={index}
@@ -169,7 +169,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form & Map */}
-      <section id="contact-form" className="py-20 bg-gray-50">
+      <section id="contact-form" className="py-8 md:py-10 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
@@ -230,7 +230,7 @@ export default function ContactPage() {
                   </label>
                   <select
                     id="service-interested"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                   >
                     <option value="">Select a service</option>
                     {services.map((service, idx) => (
@@ -242,9 +242,6 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Project Budget
-                  </label>
                   <label
                     htmlFor="project-budget"
                     className="block text-sm font-medium text-gray-700 mb-2"
@@ -253,7 +250,7 @@ export default function ContactPage() {
                   </label>
                   <select
                     id="project-budget"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                   >
                     <option value="">Select budget range</option>
                     <option value="under-10k">Under $10,000</option>
@@ -278,7 +275,7 @@ export default function ContactPage() {
                 <Button
                   type="submit"
                   size="lg"
-                  className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white"
+                  className="w-full bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-900 text-white"
                 >
                   <Send className="mr-2 h-5 w-5" />
                   Send Message
@@ -300,7 +297,7 @@ export default function ContactPage() {
                   <MapPin className="h-12 w-12 text-gray-400 mx-auto mb-2" />
                   <p className="text-gray-500">Interactive Map</p>
                   <p className="text-sm text-gray-400">
-                    123 Innovation Street, Tech City
+                    Ntinda, Kigoowa Road. Kampala, Uganda
                   </p>
                 </div>
               </div>
@@ -310,7 +307,7 @@ export default function ContactPage() {
                 <h4 className="text-xl font-bold">Why Choose Inocrate?</h4>
                 {reasons.map((reason, index) => (
                   <div key={index} className="flex items-start space-x-4">
-                    <div className="w-10 h-10 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-900 rounded-lg flex items-center justify-center flex-shrink-0">
                       <reason.icon className="h-5 w-5 text-white" />
                     </div>
                     <div>
@@ -328,21 +325,21 @@ export default function ContactPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20">
+      <section className="py-10 md:py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <Badge className="bg-gradient-to-r from-orange-500 to-red-500 text-white mb-4">
+          <div className="text-center mb-4 md:mb-10">
+            <Badge className="bg-gradient-to-r from-blue-500 to-blue-900 text-white mb-4">
               FREQUENTLY ASKED
             </Badge>
-            <h2 className="text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Common{" "}
-              <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-500 to-blue-900 bg-clip-text text-transparent">
                 Questions
               </span>
             </h2>
           </div>
 
-          <div className="max-w-3xl mx-auto space-y-6">
+          <div className="max-w-3xl mx-auto space-y-4 md:space-y-6">
             <Card className="p-6 border-0 shadow-lg">
               <CardContent className="p-0">
                 <h3 className="text-xl font-bold mb-3">
@@ -402,9 +399,9 @@ export default function ContactPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-green-600 to-green-700 text-white">
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Start Your Project?
           </h2>
           <p className="text-xl mb-8 text-green-100 max-w-2xl mx-auto">
@@ -414,14 +411,14 @@ export default function ContactPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
-              className="bg-white text-green-600 hover:bg-gray-100"
+              className="bg-white text-blue-600 hover:bg-gray-100"
             >
               Schedule Consultation
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-green-600"
+              className="border-white text-gray-500 hover:bg-white hover:text-blue-600"
             >
               <Link href="/portfolio">View Our Work</Link>
             </Button>

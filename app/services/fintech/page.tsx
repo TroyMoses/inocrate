@@ -191,14 +191,14 @@ export default function FintechPage() {
       <HeroCarousel slides={heroSlides} />
 
       {/* Overview Section */}
-      <section className="py-20">
+      <section className="py-10 md:py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <Badge className="bg-gradient-to-r from-green-500 to-teal-600 text-white mb-4">
                 FINTECH SOLUTIONS
               </Badge>
-              <h2 className="text-4xl font-bold mb-6">
+              <h2 className="text-3xl md:text-4x font-bold mb-6">
                 Transforming{" "}
                 <span className="bg-gradient-to-r from-green-500 to-teal-600 bg-clip-text text-transparent">
                   Financial Services
@@ -234,13 +234,13 @@ export default function FintechPage() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-10 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge className="bg-gradient-to-r from-green-500 to-teal-600 text-white mb-4">
               OUR FEATURES
             </Badge>
-            <h2 className="text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4x font-bold mb-6">
               Comprehensive Fintech{" "}
               <span className="bg-gradient-to-r from-green-500 to-teal-600 bg-clip-text text-transparent">
                 Technology Features
@@ -283,13 +283,13 @@ export default function FintechPage() {
       </section>
 
       {/* Solutions Section */}
-      <section className="py-20">
+      <section className="py-10 md:py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge className="bg-gradient-to-r from-green-500 to-teal-600 text-white mb-4">
               OUR SOLUTIONS
             </Badge>
-            <h2 className="text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4x font-bold mb-6">
               Tailored Solutions for{" "}
               <span className="bg-gradient-to-r from-green-500 to-teal-600 bg-clip-text text-transparent">
                 Financial Innovation
@@ -341,10 +341,10 @@ export default function FintechPage() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-gradient-to-r from-green-500 to-teal-600 text-white">
+      <section className="py-10 md:py-20 bg-gradient-to-r from-green-500 to-teal-600 text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4x font-bold mb-6">
               Why Choose Our Fintech Solutions?
             </h2>
             <p className="text-xl text-green-100 max-w-3xl mx-auto">
@@ -368,29 +368,29 @@ export default function FintechPage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20">
+      <section className="py-10 md:py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-green-500 mb-2">
+              <div className="text-4x md:text-5xl font-bold text-green-500 mb-2">
                 $50M+
               </div>
               <div className="text-gray-600">Transaction Volume</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-green-500 mb-2">
+              <div className="text-4x md:text-5xl font-bold text-green-500 mb-2">
                 99.9%
               </div>
               <div className="text-gray-600">System Uptime</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-green-500 mb-2">
+              <div className="text-4x md:text-5xl font-bold text-green-500 mb-2">
                 500+
               </div>
               <div className="text-gray-600">Active Merchants</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-green-500 mb-2">
+              <div className="text-4x md:text-5xl font-bold text-green-500 mb-2">
                 25+
               </div>
               <div className="text-gray-600">Countries Served</div>
@@ -400,9 +400,9 @@ export default function FintechPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-10 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4x font-bold mb-6">
             Ready to Transform Your Financial Services?
           </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">

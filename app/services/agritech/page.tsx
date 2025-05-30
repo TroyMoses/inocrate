@@ -188,14 +188,14 @@ export default function AgritechPage() {
       <HeroCarousel slides={heroSlides} />
 
       {/* Overview Section */}
-      <section className="py-20">
+      <section className="py-10 md:py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <Badge className="bg-gradient-to-r from-green-500 to-emerald-600 text-white mb-4">
                 AGRITECH SOLUTIONS
               </Badge>
-              <h2 className="text-4xl font-bold mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 Revolutionizing{" "}
                 <span className="bg-gradient-to-r from-green-500 to-emerald-600 bg-clip-text text-transparent">
                   Modern Agriculture
@@ -231,13 +231,13 @@ export default function AgritechPage() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-10 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge className="bg-gradient-to-r from-green-500 to-emerald-600 text-white mb-4">
               OUR FEATURES
             </Badge>
-            <h2 className="text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Comprehensive Agritech{" "}
               <span className="bg-gradient-to-r from-green-500 to-emerald-600 bg-clip-text text-transparent">
                 Technology Features
@@ -280,13 +280,13 @@ export default function AgritechPage() {
       </section>
 
       {/* Solutions Section */}
-      <section className="py-20">
+      <section className="py-10 md:py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge className="bg-gradient-to-r from-green-500 to-emerald-600 text-white mb-4">
               OUR SOLUTIONS
             </Badge>
-            <h2 className="text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Tailored Solutions for{" "}
               <span className="bg-gradient-to-r from-green-500 to-emerald-600 bg-clip-text text-transparent">
                 Modern Farming
@@ -338,10 +338,10 @@ export default function AgritechPage() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-gradient-to-r from-green-500 to-emerald-600 text-white">
+      <section className="py-10 md:py-20 bg-gradient-to-r from-green-500 to-emerald-600 text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Why Choose Our Agritech Solutions?
             </h2>
             <p className="text-xl text-green-100 max-w-3xl mx-auto">
@@ -365,11 +365,11 @@ export default function AgritechPage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20">
+      <section className="py-10 md:py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-green-500 mb-2">
+              <div className="text-3xl md:text-4xl md:text-5xl font-bold text-green-500 mb-2">
                 30%
               </div>
               <div className="text-gray-600">Yield Increase</div>
@@ -397,9 +397,9 @@ export default function AgritechPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-10 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Modernize Your Farm?
           </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">

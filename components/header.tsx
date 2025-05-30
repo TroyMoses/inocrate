@@ -20,13 +20,6 @@ export default function Header() {
       <div className="container mx-auto px-4 lg:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
-          {/* <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center">
-            <span className="text-white font-bold text-lg">I</span>
-          </div>
-          <span className="text-xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
-            Inocrate
-          </span> */}
-          {/* Image of the logo */}
           <Image
             alt="Inocrate Logo"
             height={200}
@@ -159,7 +152,7 @@ export default function Header() {
             >
               Contact
             </Link>
-            <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white w-full cursor-pointer">
+            <Button className="bg-gradient-to-r from-blue-500 to-blue-900 hover:from-blue-900 hover:to-blue-500 text-white w-full cursor-pointer">
               Get Started
             </Button>
           </nav>

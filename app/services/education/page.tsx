@@ -163,16 +163,16 @@ export default function EducationPage() {
       <HeroCarousel slides={heroSlides} />
 
       {/* Overview Section */}
-      <section className="py-20">
+      <section className="py-10 md:py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Badge className="bg-gradient-to-r from-blue-500 to-purple-600 text-white mb-4">
+              <Badge className="bg-gradient-to-r from-blue-700 to-blue-900 text-white mb-4">
                 EDUCATION TECHNOLOGY
               </Badge>
-              <h2 className="text-4xl font-bold mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 Revolutionizing{" "}
-                <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent">
                   Education Systems
                 </span>
               </h2>
@@ -187,12 +187,12 @@ export default function EducationPage() {
                 programs, our platforms adapt to meet the unique needs of each
                 educational institution.
               </p>
-              <Button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white">
+              <Button className="bg-gradient-to-r from-blue-700 to-blue-900 hover:from-blue-600 hover:to-purple-700 text-white">
                 <Link href="/contact">Get Started Today</Link>
               </Button>
             </div>
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg transform rotate-3"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-blue-900 rounded-lg transform rotate-3"></div>
               <Image
                 width={600}
                 height={400}
@@ -206,15 +206,15 @@ export default function EducationPage() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-10 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="bg-gradient-to-r from-blue-500 to-purple-600 text-white mb-4">
+            <Badge className="bg-gradient-to-r from-blue-700 to-blue-900 text-white mb-4">
               OUR FEATURES
             </Badge>
-            <h2 className="text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Comprehensive Education{" "}
-              <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent">
                 Technology Features
               </span>
             </h2>
@@ -231,7 +231,7 @@ export default function EducationPage() {
                 className="group hover:shadow-xl transition-all duration-300 border-0 bg-white"
               >
                 <CardContent className="p-8">
-                  <div className="w-16 h-16 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <div className="w-16 h-16 rounded-lg bg-gradient-to-r from-blue-700 to-blue-900 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                     <feature.icon className="h-8 w-8 text-white" />
                   </div>
                   <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
@@ -255,15 +255,15 @@ export default function EducationPage() {
       </section>
 
       {/* Solutions Section */}
-      <section className="py-20">
+      <section className="py-10 md:py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="bg-gradient-to-r from-blue-500 to-purple-600 text-white mb-4">
+            <Badge className="bg-gradient-to-r from-blue-700 to-blue-900 text-white mb-4">
               OUR SOLUTIONS
             </Badge>
-            <h2 className="text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Tailored Solutions for{" "}
-              <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent">
                 Every Educational Need
               </span>
             </h2>
@@ -313,10 +313,10 @@ export default function EducationPage() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+      <section className="py-10 md:py-20 bg-gradient-to-r from-blue-700 to-blue-900 text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Why Choose Our Education Solutions?
             </h2>
             <p className="text-xl text-blue-100 max-w-3xl mx-auto">
@@ -369,9 +369,9 @@ export default function EducationPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20">
+      <section className="py-10 md:py-20">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Transform Your Educational Institution?
           </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
@@ -381,7 +381,7 @@ export default function EducationPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
-              className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white"
+              className="bg-gradient-to-r from-blue-700 to-blue-900 hover:from-blue-600 hover:to-purple-700 text-white"
             >
               <Link href="/contact">Schedule a Demo</Link>
             </Button>
