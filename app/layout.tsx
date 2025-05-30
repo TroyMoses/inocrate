@@ -8,8 +8,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Inocrate",
-  description: "Digital Technologies Limited",
+  title: "Inocrate Digital Technologies Limited",
+  description: "Empowering businesses through innovative technology solutions that create lasting impact and drive sustainable growth",
 };
 
 export default function RootLayout({
