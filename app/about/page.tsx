@@ -102,16 +102,16 @@ export default function AboutPage() {
       <HeroCarousel slides={heroSlides} />
 
       {/* Company Overview */}
-      <section className="py-20">
+      <section className="py-10 md:py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Badge className="bg-gradient-to-r from-blue-600 to-purple-600 text-white mb-4">
+              <Badge className="bg-gradient-to-r from-blue-700 to-blue-900 text-white mb-4">
                 WHO WE ARE
               </Badge>
-              <h2 className="text-4xl font-bold mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 Empowering Industries Through{" "}
-                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent">
                   Innovative Technology
                 </span>
               </h2>
@@ -128,7 +128,7 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg transform rotate-3"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-blue-900 rounded-lg transform rotate-3"></div>
               <Image
                 width={600}
                 height={400}
@@ -142,7 +142,7 @@ export default function AboutPage() {
       </section>
 
       {/* Mission, Vision, Values */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-10 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <Card className="text-center p-8 border-0 shadow-lg">
@@ -211,15 +211,15 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section */}
-      <section className="py-20">
+      <section className="py-10 md:py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="bg-gradient-to-r from-blue-600 to-purple-600 text-white mb-4">
+            <Badge className="bg-gradient-to-r from-blue-700 to-blue-900 text-white mb-4">
               MEET THE TEAM
             </Badge>
-            <h2 className="text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Meet Our Hard Working{" "}
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent">
                 Experts
               </span>
             </h2>
@@ -260,7 +260,7 @@ export default function AboutPage() {
       </section>
 
       {/* Company Stats */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
+      <section className="py-10 md:py-20 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
