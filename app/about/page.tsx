@@ -20,7 +20,7 @@ const heroSlides = [
     subtitle: "WHO WE ARE",
     description:
       "Empowering businesses through innovative technology solutions across education, fintech, and agritech sectors.",
-    backgroundImage: "/placeholder.svg?height=600&width=1200",
+    backgroundImage: "/images/bg2.jpg",
     ctaText: "Learn More About Us",
     ctaLink: "/contact",
   },
@@ -28,8 +28,8 @@ const heroSlides = [
     title: "Our Mission",
     subtitle: "DRIVING INNOVATION",
     description:
-      "To revolutionize industries through cutting-edge technology solutions that create lasting impact and drive sustainable growth.",
-    backgroundImage: "/placeholder.svg?height=600&width=1200",
+      "To revolutionize industries through technology solutions that create lasting impact and drive sustainable growth.",
+    backgroundImage: "/images/bg2.jpg",
     ctaText: "Join Our Journey",
     ctaLink: "/contact",
   },
@@ -64,32 +64,32 @@ const values = [
 
 const team = [
   {
-    name: "Alex Johnson",
+    name: "Benon",
     role: "Chief Executive Officer",
     description:
       "Visionary leader with 15+ years in technology innovation and business strategy.",
-    image: "/placeholder.svg?height=300&width=300",
+    image: "/images/team/Benon.png",
   },
   {
-    name: "Sarah Chen",
+    name: "Gerald",
     role: "Chief Technology Officer",
     description:
       "Expert in system architecture and emerging technologies with a passion for scalable solutions.",
-    image: "/placeholder.svg?height=300&width=300",
+    image: "/images/team/Benon.png",
   },
   {
-    name: "Michael Rodriguez",
+    name: "John",
     role: "Head of Product",
     description:
       "Product strategist focused on user experience and market-driven innovation.",
-    image: "/placeholder.svg?height=300&width=300",
+    image: "/images/team/Benon.png",
   },
   {
-    name: "Emily Davis",
+    name: "Emily",
     role: "Lead Developer",
     description:
       "Full-stack developer specializing in modern web technologies and cloud solutions.",
-    image: "/placeholder.svg?height=300&width=300",
+    image: "/images/team/Benon.png",
   },
 ];
 
@@ -102,7 +102,7 @@ export default function AboutPage() {
       <HeroCarousel slides={heroSlides} />
 
       {/* Company Overview */}
-      <section className="py-10 md:py-20">
+      <section className="pt-10 pb-5 md:pt-20 md:pb-10">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -132,7 +132,7 @@ export default function AboutPage() {
               <Image
                 width={600}
                 height={400}
-                src="/placeholder.svg?height=400&width=600"
+                src="/images/bg-educ.jpg"
                 alt="Team collaboration"
                 className="relative rounded-lg shadow-lg w-full"
               />
@@ -142,7 +142,7 @@ export default function AboutPage() {
       </section>
 
       {/* Mission, Vision, Values */}
-      <section className="py-10 md:py-20 bg-gray-50">
+      <section className="py-8 md:py-12 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <Card className="text-center p-8 border-0 shadow-lg">
@@ -242,7 +242,7 @@ export default function AboutPage() {
                     height={300}
                     src={member.image || "/placeholder.svg"}
                     alt={member.name}
-                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300 rounded-lg"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
