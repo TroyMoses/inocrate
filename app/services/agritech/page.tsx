@@ -5,37 +5,36 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
-  CreditCard,
+  Thermometer,
+  Droplets,
+  BarChart3,
   Smartphone,
   Shield,
-  BarChart3,
-  Zap,
-  Globe,
-  Lock,
+  Wifi,
   TrendingUp,
-  Wallet,
-  Building,
   CheckCircle,
   ArrowRight,
+  Leaf,
+  Zap,
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
 const heroSlides = [
   {
-    title: "Revolutionary Fintech Solutions",
-    subtitle: "FINANCIAL TECHNOLOGY",
+    title: "Smart Agriculture Technology",
+    subtitle: "AGRITECH INNOVATION",
     description:
-      "Secure, scalable, and efficient financial technology solutions that drive digital transformation in the finance sector.",
+      "Empowering farmers with intelligent agricultural systems that optimize productivity and sustainability through cutting-edge technology.",
     backgroundImage: "/placeholder.svg?height=600&width=1200",
-    ctaText: "Explore Fintech Solutions",
+    ctaText: "Explore Agritech Solutions",
     ctaLink: "/contact",
   },
   {
-    title: "Digital Banking Platforms",
-    subtitle: "MODERN BANKING",
+    title: "Precision Farming Solutions",
+    subtitle: "MODERN AGRICULTURE",
     description:
-      "Next-generation banking solutions with seamless user experiences and robust security features.",
+      "Data-driven farming solutions that maximize yield while minimizing environmental impact through smart monitoring and automation.",
     backgroundImage: "/placeholder.svg?height=600&width=1200",
     ctaText: "Get Started Today",
     ctaLink: "/contact",
@@ -44,145 +43,143 @@ const heroSlides = [
 
 const features = [
   {
-    icon: CreditCard,
-    title: "Payment Processing",
+    icon: Thermometer,
+    title: "IoT Sensor Networks",
     description:
-      "Secure and fast payment processing solutions with multiple payment methods support.",
+      "Advanced sensor systems for monitoring soil conditions, weather patterns, and crop health in real-time.",
     benefits: [
-      "Multi-currency Support",
-      "Real-time Processing",
-      "Fraud Detection",
-      "PCI Compliance",
+      "Soil Temperature Monitoring",
+      "Humidity Sensors",
+      "pH Level Tracking",
+      "Weather Station Integration",
     ],
   },
   {
-    icon: Wallet,
-    title: "Digital Wallets",
+    icon: Droplets,
+    title: "Smart Irrigation Systems",
     description:
-      "Modern digital wallet solutions with contactless payments and loyalty programs.",
+      "Automated irrigation solutions that optimize water usage based on real-time data and weather forecasts.",
     benefits: [
-      "Contactless Payments",
-      "Loyalty Integration",
-      "P2P Transfers",
-      "QR Code Payments",
-    ],
-  },
-  {
-    icon: Building,
-    title: "Banking APIs",
-    description:
-      "Comprehensive banking APIs for seamless integration with existing systems.",
-    benefits: [
-      "Account Management",
-      "Transaction APIs",
-      "KYC Integration",
-      "Regulatory Compliance",
+      "Automated Watering",
+      "Water Conservation",
+      "Schedule Optimization",
+      "Remote Control",
     ],
   },
   {
     icon: BarChart3,
-    title: "Financial Analytics",
+    title: "Farm Analytics Platform",
     description:
-      "Advanced analytics and reporting tools for financial insights and decision making.",
+      "Comprehensive analytics dashboard providing insights into crop performance, yield predictions, and farm efficiency.",
     benefits: [
-      "Real-time Dashboards",
-      "Risk Analytics",
-      "Performance Metrics",
-      "Custom Reports",
-    ],
-  },
-  {
-    icon: Shield,
-    title: "Security & Compliance",
-    description:
-      "Enterprise-grade security with full regulatory compliance and fraud prevention.",
-    benefits: [
-      "End-to-end Encryption",
-      "Multi-factor Authentication",
-      "Compliance Monitoring",
-      "Audit Trails",
+      "Yield Predictions",
+      "Performance Analytics",
+      "Cost Analysis",
+      "ROI Tracking",
     ],
   },
   {
     icon: Smartphone,
-    title: "Mobile Banking",
+    title: "Mobile Farm Management",
     description:
-      "Feature-rich mobile banking applications with intuitive user interfaces.",
+      "Mobile applications for farmers to monitor and manage their operations from anywhere, anytime.",
     benefits: [
-      "Biometric Authentication",
-      "Push Notifications",
-      "Offline Capabilities",
-      "Cross-platform Support",
+      "Real-time Monitoring",
+      "Task Management",
+      "Inventory Tracking",
+      "Field Reports",
+    ],
+  },
+  {
+    icon: Wifi,
+    title: "Drone Integration",
+    description:
+      "Aerial monitoring and crop surveillance using drone technology for precision agriculture applications.",
+    benefits: [
+      "Crop Surveillance",
+      "Pest Detection",
+      "Field Mapping",
+      "Spray Applications",
+    ],
+  },
+  {
+    icon: Shield,
+    title: "Crop Protection Systems",
+    description:
+      "Early warning systems for pest detection, disease prevention, and crop protection measures.",
+    benefits: [
+      "Pest Early Warning",
+      "Disease Detection",
+      "Treatment Recommendations",
+      "Preventive Measures",
     ],
   },
 ];
 
 const solutions = [
   {
-    title: "Digital Banking Platform",
+    title: "Smart Farm Management Platform",
     description:
-      "Complete digital banking solution with account management, transactions, and customer service features.",
+      "Comprehensive farm management solution with IoT integration, analytics, and mobile access for modern farming operations.",
     image: "/placeholder.svg?height=300&width=400",
     features: [
-      "Account opening",
-      "Transaction management",
-      "Customer support",
-      "Regulatory reporting",
+      "IoT sensor integration",
+      "Real-time monitoring",
+      "Automated alerts",
+      "Performance analytics",
     ],
   },
   {
-    title: "Payment Gateway",
+    title: "Agricultural Marketplace",
     description:
-      "Robust payment processing platform supporting multiple payment methods and currencies.",
+      "Digital marketplace connecting farmers with buyers, suppliers, and agricultural service providers.",
     image: "/placeholder.svg?height=300&width=400",
     features: [
-      "Multi-payment support",
-      "Fraud prevention",
-      "Real-time processing",
-      "Merchant dashboard",
+      "Direct farmer-buyer connection",
+      "Price transparency",
+      "Quality assurance",
+      "Logistics support",
     ],
   },
   {
-    title: "Lending Platform",
+    title: "Precision Agriculture Suite",
     description:
-      "Automated lending solutions with credit scoring, risk assessment, and loan management.",
+      "Advanced precision farming tools with GPS guidance, variable rate application, and field mapping capabilities.",
     image: "/placeholder.svg?height=300&width=400",
     features: [
-      "Credit scoring",
-      "Risk assessment",
-      "Automated approvals",
-      "Loan tracking",
+      "GPS field mapping",
+      "Variable rate seeding",
+      "Fertilizer optimization",
+      "Harvest planning",
     ],
   },
 ];
 
 const benefits = [
   {
-    icon: Zap,
-    title: "Lightning Fast",
-    description:
-      "Process transactions in milliseconds with our optimized infrastructure",
-  },
-  {
-    icon: Lock,
-    title: "Bank-Grade Security",
-    description:
-      "Military-grade encryption and security protocols protect your data",
-  },
-  {
-    icon: Globe,
-    title: "Global Reach",
-    description:
-      "Support for multiple currencies and international payment methods",
-  },
-  {
     icon: TrendingUp,
-    title: "Scalable Solutions",
-    description: "Grow your business with solutions that scale with your needs",
+    title: "Increased Productivity",
+    description:
+      "Boost crop yields by up to 30% with data-driven farming decisions",
+  },
+  {
+    icon: Droplets,
+    title: "Water Conservation",
+    description: "Reduce water usage by 25% through smart irrigation systems",
+  },
+  {
+    icon: Leaf,
+    title: "Sustainable Farming",
+    description: "Promote eco-friendly practices with precision agriculture",
+  },
+  {
+    icon: Zap,
+    title: "Cost Reduction",
+    description: "Lower operational costs through automation and optimization",
   },
 ];
 
-export default function FintechPage() {
+export default function AgritechPage() {
   return (
     <div className="min-h-screen">
       <Header />
@@ -195,37 +192,37 @@ export default function FintechPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Badge className="bg-gradient-to-r from-green-500 to-teal-600 text-white mb-4">
-                FINTECH SOLUTIONS
+              <Badge className="bg-gradient-to-r from-green-500 to-emerald-600 text-white mb-4">
+                AGRITECH SOLUTIONS
               </Badge>
               <h2 className="text-4xl font-bold mb-6">
-                Transforming{" "}
-                <span className="bg-gradient-to-r from-green-500 to-teal-600 bg-clip-text text-transparent">
-                  Financial Services
+                Revolutionizing{" "}
+                <span className="bg-gradient-to-r from-green-500 to-emerald-600 bg-clip-text text-transparent">
+                  Modern Agriculture
                 </span>
               </h2>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Our fintech solutions are designed to revolutionize the
-                financial services industry with secure, scalable, and
-                user-friendly platforms that enhance customer experiences and
-                streamline operations.
+                Our agritech solutions combine IoT sensors, data analytics, and
+                mobile technology to create smart farming systems that increase
+                productivity, reduce costs, and promote sustainable agricultural
+                practices.
               </p>
               <p className="text-gray-600 mb-8 leading-relaxed">
-                From digital banking to payment processing and lending
-                platforms, we provide comprehensive solutions that meet the
-                evolving needs of modern financial institutions.
+                From precision farming to agricultural marketplaces, we provide
+                comprehensive solutions that empower farmers with the tools they
+                need to succeed in modern agriculture.
               </p>
-              <Button className="bg-gradient-to-r from-green-500 to-teal-600 hover:from-green-600 hover:to-teal-700 text-white">
+              <Button className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white">
                 <Link href="/contact">Get Started Today</Link>
               </Button>
             </div>
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-teal-600 rounded-lg transform rotate-3"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-600 rounded-lg transform rotate-3"></div>
               <Image
                 width={600}
                 height={400}
                 src="/placeholder.svg?height=400&width=600"
-                alt="Fintech solutions"
+                alt="Smart agriculture technology"
                 className="relative rounded-lg shadow-lg w-full"
               />
             </div>
@@ -237,18 +234,18 @@ export default function FintechPage() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="bg-gradient-to-r from-green-500 to-teal-600 text-white mb-4">
+            <Badge className="bg-gradient-to-r from-green-500 to-emerald-600 text-white mb-4">
               OUR FEATURES
             </Badge>
             <h2 className="text-4xl font-bold mb-6">
-              Comprehensive Fintech{" "}
-              <span className="bg-gradient-to-r from-green-500 to-teal-600 bg-clip-text text-transparent">
+              Comprehensive Agritech{" "}
+              <span className="bg-gradient-to-r from-green-500 to-emerald-600 bg-clip-text text-transparent">
                 Technology Features
               </span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Everything you need to build modern, secure, and scalable
-              financial applications
+              Everything you need to modernize your farming operations and
+              maximize productivity
             </p>
           </div>
 
@@ -259,7 +256,7 @@ export default function FintechPage() {
                 className="group hover:shadow-xl transition-all duration-300 border-0 bg-white"
               >
                 <CardContent className="p-8">
-                  <div className="w-16 h-16 rounded-lg bg-gradient-to-r from-green-500 to-teal-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <div className="w-16 h-16 rounded-lg bg-gradient-to-r from-green-500 to-emerald-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                     <feature.icon className="h-8 w-8 text-white" />
                   </div>
                   <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
@@ -286,13 +283,13 @@ export default function FintechPage() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="bg-gradient-to-r from-green-500 to-teal-600 text-white mb-4">
+            <Badge className="bg-gradient-to-r from-green-500 to-emerald-600 text-white mb-4">
               OUR SOLUTIONS
             </Badge>
             <h2 className="text-4xl font-bold mb-6">
               Tailored Solutions for{" "}
-              <span className="bg-gradient-to-r from-green-500 to-teal-600 bg-clip-text text-transparent">
-                Financial Innovation
+              <span className="bg-gradient-to-r from-green-500 to-emerald-600 bg-clip-text text-transparent">
+                Modern Farming
               </span>
             </h2>
           </div>
@@ -320,7 +317,7 @@ export default function FintechPage() {
                   </ul>
                   <Button
                     variant="outline"
-                    className="group hover:bg-gradient-to-r hover:from-green-500 hover:to-teal-600 hover:text-white hover:border-transparent transition-all"
+                    className="group hover:bg-gradient-to-r hover:from-green-500 hover:to-emerald-600 hover:text-white hover:border-transparent transition-all"
                   >
                     Learn More <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -341,14 +338,14 @@ export default function FintechPage() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-gradient-to-r from-green-500 to-teal-600 text-white">
+      <section className="py-20 bg-gradient-to-r from-green-500 to-emerald-600 text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-6">
-              Why Choose Our Fintech Solutions?
+              Why Choose Our Agritech Solutions?
             </h2>
             <p className="text-xl text-green-100 max-w-3xl mx-auto">
-              Transform your financial services with technology that delivers
+              Transform your farming operations with technology that delivers
               real results
             </p>
           </div>
@@ -373,27 +370,27 @@ export default function FintechPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-4xl md:text-5xl font-bold text-green-500 mb-2">
-                $50M+
+                30%
               </div>
-              <div className="text-gray-600">Transaction Volume</div>
+              <div className="text-gray-600">Yield Increase</div>
             </div>
             <div>
               <div className="text-4xl md:text-5xl font-bold text-green-500 mb-2">
-                99.9%
+                25%
               </div>
-              <div className="text-gray-600">System Uptime</div>
+              <div className="text-gray-600">Water Savings</div>
             </div>
             <div>
               <div className="text-4xl md:text-5xl font-bold text-green-500 mb-2">
-                500+
+                40%
               </div>
-              <div className="text-gray-600">Active Merchants</div>
+              <div className="text-gray-600">Cost Reduction</div>
             </div>
             <div>
               <div className="text-4xl md:text-5xl font-bold text-green-500 mb-2">
-                25+
+                100+
               </div>
-              <div className="text-gray-600">Countries Served</div>
+              <div className="text-gray-600">Farms Connected</div>
             </div>
           </div>
         </div>
@@ -403,17 +400,17 @@ export default function FintechPage() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-6">
-            Ready to Transform Your Financial Services?
+            Ready to Modernize Your Farm?
           </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Let{"'"}s discuss how our fintech solutions can help you enhance
-            customer experiences, improve security, and drive digital
-            transformation in your organization.
+            Let{"'"}s discuss how our agritech solutions can help you increase
+            productivity, reduce costs, and promote sustainable farming
+            practices.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
-              className="bg-gradient-to-r from-green-500 to-teal-600 hover:from-green-600 hover:to-teal-700 text-white"
+              className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white"
             >
               <Link href="/contact">Schedule a Demo</Link>
             </Button>
