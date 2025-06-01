@@ -54,13 +54,13 @@ export default function Header() {
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link href="/services/fintech" className="cursor-pointer">
-                  Fintech Solutions
+                <Link href="/services/commtech" className="cursor-pointer">
+                  Commtech Systems
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link href="/services/agritech" className="cursor-pointer">
-                  Agritech Platforms
+                <Link href="/services/couriertech" className="cursor-pointer">
+                  CourierTech Systems
                 </Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
@@ -81,9 +81,9 @@ export default function Header() {
 
         {/* CTA Button */}
         <div className="hidden md:flex">
-          <Button className="bg-gradient-to-r from-blue-500 to-blue-900 hover:from-blue-900 hover:to-blue-500 text-white cursor-pointer transition-all duration-300">
+          <Link href={"/contact"} className="bg-gradient-to-r from-blue-500 to-blue-900 hover:from-blue-900 hover:to-blue-500 text-white cursor-pointer transition-all duration-300">
             Get Started
-          </Button>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -124,19 +124,19 @@ export default function Header() {
                   href="/services/education"
                   className="block text-gray-600 hover:text-blue-900 transition-colors cursor-pointer"
                 >
-                  Education Systems
+                  EduTech Systems
                 </Link>
                 <Link
-                  href="/services/fintech"
-                  className="block text-gray-600 hover:text-blue-900 transition-colors cursor-pointer"
+                  href="/services/commtech"
+                  className="block text-gray-600 hover:text-orange-500 transition-colors"
                 >
-                  Fintech Solutions
+                  CommTech Systems
                 </Link>
                 <Link
-                  href="/services/agritech"
-                  className="block text-gray-600 hover:text-blue-900 transition-colors cursor-pointer"
+                  href="/services/couriertech"
+                  className="block text-gray-600 hover:text-orange-500 transition-colors"
                 >
-                  Agritech Platforms
+                  CourierTech Systems
                 </Link>
               </div>
             </div>

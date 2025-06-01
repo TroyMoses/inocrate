@@ -1,6 +1,5 @@
 import Link from "next/link";
 import {
-  Facebook,
   Twitter,
   Linkedin,
   Instagram,
@@ -31,18 +30,13 @@ export default function Footer() {
             </div>
             <p className="text-gray-600 text-sm leading-relaxed">
               An innovative technology solutions company specializing in
-              building systems for schools, fintech, and agritech sectors. We
-              drive digital transformation through cutting-edge solutions.
+              building systems for education, communication, and logistics
+              sectors. We drive digital transformation through cutting-edge
+              solutions.
             </p>
             <div className="flex space-x-4">
               <Link
-                href="https://www.facebook.com"
-                className="text-gray-500 hover:text-blue-600 transition-colors"
-              >
-                <Facebook className="h-5 w-5" />
-              </Link>
-              <Link
-                href="https://www.twitter.com"
+                href="https://www.twitter.com/inocrate"
                 className="text-gray-500 hover:text-blue-600 transition-colors"
               >
                 <Twitter className="h-5 w-5" />
@@ -54,7 +48,7 @@ export default function Footer() {
                 <Linkedin className="h-5 w-5" />
               </Link>
               <Link
-                href="https://www.instagram.com"
+                href="https://www.instagram.com/inocratedigito"
                 className="text-gray-500 hover:text-blue-600 transition-colors"
               >
                 <Instagram className="h-5 w-5" />
@@ -112,23 +106,23 @@ export default function Footer() {
                   href="/services/education"
                   className="text-gray-600 hover:text-blue-600 transition-colors"
                 >
-                  Education Systems
+                  EduTech Systems
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/services/fintech"
+                  href="/services/commtech"
                   className="text-gray-600 hover:text-blue-600 transition-colors"
                 >
-                  Fintech Solutions
+                  CommTech Systems
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/services/agritech"
+                  href="/services/couriertech"
                   className="text-gray-600 hover:text-blue-600 transition-colors"
                 >
-                  Agritech Platforms
+                  CourierTech Systems
                 </Link>
               </li>
             </ul>

@@ -287,7 +287,7 @@ export default function ContactPage() {
             <div>
               <h3 className="text-3xl font-bold mb-6">Visit Our Office</h3>
               <p className="text-gray-600 mb-8">
-                We{"'"}re located in the heart of Tech City. Feel free to visit
+                We{"'"}re located in the heart of Kampala City. Feel free to visit
                 us for a face-to-face consultation.
               </p>
 

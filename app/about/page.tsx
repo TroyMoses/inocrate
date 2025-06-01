@@ -7,10 +7,12 @@ import {
   Target,
   Eye,
   Heart,
-  Users,
   Lightbulb,
   Shield,
   Zap,
+  TrendingUp,
+  Award,
+  Handshake,
 } from "lucide-react";
 import Image from "next/image";
 
@@ -19,7 +21,7 @@ const heroSlides = [
     title: "About Inocrate",
     subtitle: "WHO WE ARE",
     description:
-      "Empowering businesses through innovative technology solutions across education, fintech, and agritech sectors.",
+      "Delivering smart, human-centered innovations that simplify communication, education, logistics, and technology.",
     backgroundImage: "/images/bg2.jpg",
     ctaText: "Learn More About Us",
     ctaLink: "/contact",
@@ -28,70 +30,82 @@ const heroSlides = [
     title: "Our Mission",
     subtitle: "DRIVING INNOVATION",
     description:
-      "To revolutionize industries through technology solutions that create lasting impact and drive sustainable growth.",
+      "To create a smarter world through purposeful innovations that transform industries and improve lives.",
     backgroundImage: "/images/bg2.jpg",
     ctaText: "Join Our Journey",
     ctaLink: "/contact",
   },
 ];
 
-const values = [
+const ikigaiValues = [
+  {
+    icon: Award,
+    title: "Impact",
+    description:
+      "We create with purpose, delivering solutions that leave a meaningful imprint on society.",
+  },
   {
     icon: Lightbulb,
-    title: "Innovation",
+    title: "Knowledge",
     description:
-      "We constantly push boundaries to deliver cutting-edge solutions that transform industries.",
+      "We pursue learning and mastery to continually grow our competence and creativity.",
   },
   {
     icon: Shield,
-    title: "Security",
+    title: "Integrity",
     description:
-      "Security is at the core of everything we build, ensuring your data and systems are protected.",
+      "We operate with honesty, honor our word, and foster trust through transparency and accountability.",
   },
   {
-    icon: Users,
-    title: "Collaboration",
+    icon: TrendingUp,
+    title: "Growth",
     description:
-      "We work closely with our clients to understand their needs and deliver tailored solutions.",
+      "We are committed to personal and organizational development, always striving to evolve.",
+  },
+  {
+    icon: Handshake,
+    title: "Alignment",
+    description:
+      "We build in harmony with our values, passions, skills, and the needs of the world.",
   },
   {
     icon: Zap,
-    title: "Efficiency",
+    title: "Innovation",
     description:
-      "Our solutions are designed to optimize processes and maximize productivity for our clients.",
+      "We embrace creativity and challenge convention to design bold, future-ready solutions.",
   },
 ];
 
-const team = [
-  {
-    name: "Benon",
-    role: "Chief Executive Officer",
-    description:
-      "Visionary leader with 15+ years in technology innovation and business strategy.",
-    image: "/images/team/Benon.png",
-  },
-  {
-    name: "Gerald",
-    role: "Chief Technology Officer",
-    description:
-      "Expert in system architecture and emerging technologies with a passion for scalable solutions.",
-    image: "/images/team/Benon.png",
-  },
-  {
-    name: "John",
-    role: "Head of Product",
-    description:
-      "Product strategist focused on user experience and market-driven innovation.",
-    image: "/images/team/Benon.png",
-  },
-  {
-    name: "Emily",
-    role: "Lead Developer",
-    description:
-      "Full-stack developer specializing in modern web technologies and cloud solutions.",
-    image: "/images/team/Benon.png",
-  },
-];
+// const team = [
+//   {
+//     name: "Benon",
+//     role: "Chief Executive Officer",
+//     description:
+//       "Visionary leader with 15+ years in technology innovation and business strategy.",
+//     image: "/images/team/Benon.png",
+//   },
+//   {
+//     name: "Gerald",
+//     role: "Chief Technology Officer",
+//     description:
+//       "Expert in system architecture and emerging technologies with a passion for scalable solutions.",
+//     image: "/images/team/Benon.png",
+//   },
+//   {
+//     name: "John",
+//     role: "Head of Product",
+//     description:
+//       "Product strategist focused on user experience and market-driven innovation.",
+//     image: "/images/team/Benon.png",
+//   },
+//   {
+//     name: "Emily",
+//     role: "Lead Developer",
+//     description:
+//       "Full-stack developer specializing in modern web technologies and cloud solutions.",
+//     image: "/images/team/Benon.png",
+//   },
+// ];
 
 export default function AboutPage() {
   return (
@@ -116,10 +130,11 @@ export default function AboutPage() {
                 </span>
               </h2>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Inocrate is a forward-thinking technology company dedicated to
-                revolutionizing the education, fintech, and agritech sectors. We
-                believe in the power of technology to transform businesses and
-                create meaningful impact in people{"'"}s lives.
+                Inocrate Digital Technologies Limited is a forward-thinking
+                technology company dedicated to revolutionizing education,
+                communication, and logistics sectors. We believe in the power of
+                technology to transform businesses and create meaningful impact
+                in people{"'"}s lives.
               </p>
               <p className="text-gray-600 leading-relaxed">
                 Our team of experienced developers, designers, and strategists
@@ -152,9 +167,8 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
                 <p className="text-gray-600">
-                  To empower businesses with innovative technology solutions
-                  that drive growth, efficiency, and positive impact across
-                  industries.
+                  To deliver smart, human-centered innovations that simplify
+                  communication, education, logistics, and technology.
                 </p>
               </CardContent>
             </Card>
@@ -166,9 +180,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
                 <p className="text-gray-600">
-                  To be the leading technology partner for businesses seeking
-                  digital transformation and sustainable growth in the modern
-                  economy.
+                  To create a smarter world through purposeful innovations.
                 </p>
               </CardContent>
             </Card>
@@ -180,28 +192,36 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Our Values</h3>
                 <p className="text-gray-600">
-                  Innovation, integrity, collaboration, and excellence guide
-                  everything we do as we build solutions that make a difference.
+                  Guided by IKIGAI principles - Impact, Knowledge, Integrity,
+                  Growth, Alignment, and Innovation - we build solutions that
+                  make a difference.
                 </p>
               </CardContent>
             </Card>
           </div>
 
-          {/* Core Values */}
+          {/* IKIGAI Values */}
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold mb-8">Our Core Values</h3>
+            <h3 className="text-3xl font-bold mb-4">
+              Our Core Values - IKIGAI
+            </h3>
+            <p className="text-gray-600 max-w-2xl mx-auto mb-8">
+              Our values are rooted in the Japanese concept of IKIGAI - the
+              intersection of what you love, what you{"'"}re good at, what the
+              world needs, and what you can be paid for.
+            </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {values.map((value, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {ikigaiValues.map((value, index) => (
               <Card
                 key={index}
                 className="p-6 text-center border-0 shadow-md hover:shadow-lg transition-shadow"
               >
                 <CardContent className="p-0">
-                  <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center mx-auto mb-4">
                     <value.icon className="h-6 w-6 text-white" />
                   </div>
-                  <h4 className="font-bold mb-2">{value.title}</h4>
+                  <h4 className="font-bold mb-2 text-lg">{value.title}</h4>
                   <p className="text-sm text-gray-600">{value.description}</p>
                 </CardContent>
               </Card>
@@ -211,7 +231,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section */}
-      <section className="py-10 md:py-20">
+      {/* <section className="py-10 md:py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge className="bg-gradient-to-r from-blue-700 to-blue-900 text-white mb-4">
@@ -257,7 +277,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Company Stats */}
       <section className="py-10 md:py-20 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
@@ -276,7 +296,7 @@ export default function AboutPage() {
               <div className="text-blue-100">Happy Clients</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold mb-2">3</div>
+              <div className="text-4xl md:text-5xl font-bold mb-2">4</div>
               <div className="text-blue-100">Industry Sectors</div>
             </div>
           </div>
