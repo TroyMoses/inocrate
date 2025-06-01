@@ -6,8 +6,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import {
   GraduationCap,
-  CreditCard,
-  Sprout,
+  MessageSquare,
+  Truck,
   Users,
   Award,
   TrendingUp,
@@ -28,22 +28,22 @@ const heroSlides = [
     ctaLink: "/services/education",
   },
   {
-    title: "Revolutionary Fintech Solutions",
-    subtitle: "FINANCIAL TECHNOLOGY",
+    title: "Top Communication Solutions",
+    subtitle: "COMMTECH SYSTEMS",
     description:
-      "Secure, scalable, and efficient financial technology solutions that drive digital transformation in the finance sector.",
-    backgroundImage: "/images/bg1.jpg",
-    ctaText: "Discover Fintech Services",
-    ctaLink: "/services/fintech",
+      "Empower your business with our bulk SMS vending platform that delivers fast, reliable, and trackable messaging at scale.",
+    backgroundImage: "/images/commtech.jpg",
+    ctaText: "Discover Commtech Services",
+    ctaLink: "/services/commtech",
   },
   {
-    title: "Smart Agriculture Technology",
-    subtitle: "AGRITECH INNOVATION",
+    title: "Courier Management Platforms",
+    subtitle: "COURIERTECH SYSTEMS",
     description:
-      "Empowering farmers with intelligent agricultural systems that optimize productivity and sustainability.",
-    backgroundImage: "/images/agritech.jpg",
-    ctaText: "Learn About Agritech",
-    ctaLink: "/services/agritech",
+      "Streamline your delivery operations with advanced tracking, route optimization, and automated notifications through Kouria.",
+    backgroundImage: "/images/couriertech2.jpg",
+    ctaText: "Learn About Couriertech",
+    ctaLink: "/services/couriertech",
   },
 ];
 
@@ -60,68 +60,71 @@ const services = [
       "Virtual Classrooms",
     ],
     color: "from-blue-500 to-purple-600",
+    link: "/services/education",
   },
   {
-    icon: CreditCard,
-    title: "Fintech Solutions",
+    icon: MessageSquare,
+    title: "Commtech Systems",
     description:
-      "Secure payment platforms, digital banking solutions, and financial management systems that revolutionize financial services.",
+      "High-performance bulk SMS vending platform that empowers users to blast fast, reliable, and trackable SMS messages at scale.",
     features: [
-      "Payment Gateways",
-      "Digital Wallets",
-      "Banking APIs",
-      "Risk Management",
+      "Bulk Messaging",
+      "Real-Time Delivery Reports",
+      "Message Scheduling",
+      "Easy API Integration",
     ],
     color: "from-green-500 to-teal-600",
+    link: "/services/commtech",
   },
   {
-    icon: Sprout,
-    title: "Agritech Platforms",
+    icon: Truck,
+    title: "Couriertech Systems (Kouria)",
     description:
-      "Smart farming solutions, crop monitoring systems, and agricultural marketplaces that modernize farming practices.",
+      "A digital courier management platform which streamlines deliveries with advanced tracking and automation for efficient logistics.",
     features: [
-      "Farm Management",
-      "IoT Sensors",
-      "Market Platforms",
-      "Data Analytics",
+      "Real-time Tracking",
+      "Smart Route Optimization",
+      "Mobile App for Couriers",
+      "Automated Notifications",
     ],
     color: "from-orange-500 to-red-600",
+    link: "/services/couriertech",
   },
 ];
 
 const stats = [
   { number: "50+", label: "Projects Completed", icon: Award },
   { number: "25+", label: "Happy Clients", icon: Users },
-  { number: "3", label: "Industry Sectors", icon: TrendingUp },
+  { number: "4", label: "Industry Sectors", icon: TrendingUp },
   { number: "99%", label: "Client Satisfaction", icon: Star },
 ];
 
-const testimonials = [
-  {
-    name: "Sarah Johnson",
-    role: "Education Director",
-    company: "TechEdu Institute",
-    content:
-      "Inocrate's education platform transformed our learning environment. Student engagement increased by 40% and administrative efficiency improved dramatically.",
-    rating: 5,
-  },
-  {
-    name: "Michael Chen",
-    role: "CTO",
-    company: "FinanceFlow",
-    content:
-      "Their fintech solution provided us with a robust, secure platform that scaled with our business. The integration was seamless and support exceptional.",
-    rating: 5,
-  },
-  {
-    name: "David Okonkwo",
-    role: "Farm Manager",
-    company: "GreenHarvest Farms",
-    content:
-      "The agritech platform revolutionized our farming operations. We've seen 30% increase in yield and significant cost savings through smart monitoring.",
-    rating: 5,
-  },
-];
+// const testimonials = [
+//   {
+//     name: "Sarah Johnson",
+//     role: "Marketing Manager",
+//      company: "GlobalReach Communications",
+//     content:
+//       "Their Commtech SMS platform revolutionized our customer outreach. We now send millions of messages with 99.9% delivery rate and real-time tracking.",
+//     rating: 5,
+//   },
+//   {
+//     name: "Michael Chen",
+//     role: "CTO",
+//     company: "FinanceFlow",
+//     content:
+//       "Their fintech solution provided us with a robust, secure platform that scaled with our business. The integration was seamless and support exceptional.",
+//     rating: 5,
+//   },
+//   {
+//     name: "David Okonkwo",
+//     role: "Operations Manager",
+//     company: "SwiftDelivery Services",
+//     content:
+//       "Kouria transformed our courier operations. Route optimization reduced delivery time by 35% and automated notifications improved customer satisfaction significantly.",
+//     rating: 5,
+//   },
+// ];
 
 export default function HomePage() {
   return (
@@ -145,8 +148,8 @@ export default function HomePage() {
               </span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Innovative systems designed for education, finance, and
-              agriculture sectors
+              Innovative systems designed for education, communication, and
+              logistic sectors.
             </p>
           </div>
 
@@ -177,12 +180,14 @@ export default function HomePage() {
                       </li>
                     ))}
                   </ul>
-                  <Button
-                    variant="outline"
-                    className="group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:to-blue-600 group-hover:text-white group-hover:border-transparent transition-all cursor-pointer"
-                  >
-                    Learn More <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
+                  <Link href={`${service.link}`} passHref legacyBehavior>
+                    <Button
+                      variant="outline"
+                      className="group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:to-blue-600 group-hover:text-white group-hover:border-transparent transition-all cursor-pointer"
+                    >
+                      Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             ))}
@@ -226,8 +231,8 @@ export default function HomePage() {
               <p className="text-gray-600 mb-8 leading-relaxed">
                 Choosing us means partnering with a trusted leader in technology
                 innovation. Our solutions provide unparalleled efficiency and
-                security across education, fintech, and agritech sectors. We
-                prioritize user experience and deliver scalable systems that
+                security across education, communication, and logistics sectors.
+                We prioritize user experience and deliver scalable systems that
                 grow with your business.
               </p>
               <div className="space-y-4">
@@ -261,7 +266,7 @@ export default function HomePage() {
                 <div className="text-gray-600">Clients</div>
               </Card>
               <Card className="text-center p-6 border-2 border-blue-100">
-                <div className="text-4xl font-bold text-blue-500 mb-2">3</div>
+                <div className="text-4xl font-bold text-blue-500 mb-2">4</div>
                 <div className="text-gray-600">Industries</div>
               </Card>
               <Card className="text-center p-6 border-2 border-purple-100">
@@ -276,7 +281,7 @@ export default function HomePage() {
       </section>
 
       {/* Testimonials */}
-      <section className="pt-10 pb-10 md:pb-20 bg-gray-50">
+      {/* <section className="pt-10 pb-10 md:pb-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge className="bg-gradient-to-r from-blue-700 to-blue-900 text-white mb-4">
@@ -323,7 +328,7 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-10 md:py-20 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
