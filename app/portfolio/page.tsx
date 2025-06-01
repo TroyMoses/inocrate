@@ -233,7 +233,7 @@ export default function PortfolioPage() {
               <div className="text-gray-600">Happy Clients</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-500 mb-2">3</div>
+              <div className="text-4xl font-bold text-blue-500 mb-2">4</div>
               <div className="text-gray-600">Industry Sectors</div>
             </div>
             <div className="text-center">

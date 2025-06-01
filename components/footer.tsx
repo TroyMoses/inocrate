@@ -161,7 +161,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-400 mt-8 pt-8 text-center">
           <p className="text-gray-700 text-sm">
-            © {new Date().getFullYear()} Inocrate. All Rights Reserved.
+            © 2023 Inocrate. All Rights Reserved.
           </p>
         </div>
       </div>
