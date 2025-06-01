@@ -17,7 +17,7 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <Link href="/" className="flex items-center space-x-2">
+              <Link href="/" className="flex items-center space-x-2" legacyBehavior>
                 {/* Image of the logo */}
                 <Image
                   alt="Inocrate Logo"
@@ -38,19 +38,19 @@ export default function Footer() {
               <Link
                 href="https://www.twitter.com/inocrate"
                 className="text-gray-500 hover:text-blue-600 transition-colors"
-              >
+                legacyBehavior>
                 <Twitter className="h-5 w-5" />
               </Link>
               <Link
                 href="https://www.linkedin.com"
                 className="text-gray-500 hover:text-blue-600 transition-colors"
-              >
+                legacyBehavior>
                 <Linkedin className="h-5 w-5" />
               </Link>
               <Link
                 href="https://www.instagram.com/inocratedigito"
                 className="text-gray-500 hover:text-blue-600 transition-colors"
-              >
+                legacyBehavior>
                 <Instagram className="h-5 w-5" />
               </Link>
             </div>

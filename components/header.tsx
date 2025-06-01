@@ -19,7 +19,7 @@ export default function Header() {
     <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
       <div className="container mx-auto px-4 lg:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center space-x-2">
+        <Link href="/" className="flex items-center space-x-2" legacyBehavior>
           <Image
             alt="Inocrate Logo"
             height={200}
@@ -50,12 +50,12 @@ export default function Header() {
             <DropdownMenuContent>
               <DropdownMenuItem asChild>
                 <Link href="/services/education" className="cursor-pointer">
-                  Education Systems
+                  EduTech Systems
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
                 <Link href="/services/commtech" className="cursor-pointer">
-                  Commtech Systems
+                  CommTech Systems
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
@@ -100,7 +100,6 @@ export default function Header() {
           )}
         </button>
       </div>
-
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-200">

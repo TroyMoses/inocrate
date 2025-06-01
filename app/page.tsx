@@ -60,6 +60,7 @@ const services = [
       "Virtual Classrooms",
     ],
     color: "from-blue-500 to-purple-600",
+    link: "/services/education",
   },
   {
     icon: MessageSquare,
@@ -73,6 +74,7 @@ const services = [
       "Easy API Integration",
     ],
     color: "from-green-500 to-teal-600",
+    link: "/services/commtech",
   },
   {
     icon: Truck,
@@ -86,6 +88,7 @@ const services = [
       "Automated Notifications",
     ],
     color: "from-orange-500 to-red-600",
+    link: "/services/couriertech",
   },
 ];
 
@@ -146,7 +149,7 @@ export default function HomePage() {
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Innovative systems designed for education, communication, and
-              logistic sectors
+              logistic sectors.
             </p>
           </div>
 
@@ -177,12 +180,14 @@ export default function HomePage() {
                       </li>
                     ))}
                   </ul>
-                  <Button
-                    variant="outline"
-                    className="group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:to-blue-600 group-hover:text-white group-hover:border-transparent transition-all cursor-pointer"
-                  >
-                    Learn More <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
+                  <Link href={`${service.link}`} passHref legacyBehavior>
+                    <Button
+                      variant="outline"
+                      className="group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:to-blue-600 group-hover:text-white group-hover:border-transparent transition-all cursor-pointer"
+                    >
+                      Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             ))}
