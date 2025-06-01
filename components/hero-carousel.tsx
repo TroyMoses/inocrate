@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 interface CarouselSlide {
   title: string;
@@ -64,14 +63,12 @@ export default function HeroCarousel({ slides }: HeroCarouselProps) {
                 <p className="text-base md:text-xl mb-8 text-gray-200 leading-relaxed">
                   {slide.description}
                 </p>
-                <Link href={`${slide.ctaLink}`} passHref legacyBehavior>
-                  <Button
-                    size="lg"
-                    className="bg-gradient-to-r from-blue-700 to-blue-800 hover:from-blue-800 hover:to-blue-900 text-white px-8 py-3 cursor-pointer"
-                  >
-                    {slide.ctaText}
-                  </Button>
-                </Link>
+                <Button
+                  size="lg"
+                  className="bg-gradient-to-r from-blue-700 to-blue-800 hover:from-blue-800 hover:to-blue-900 text-white px-8 py-3 cursor-pointer"
+                >
+                  {slide.ctaText}
+                </Button>
               </div>
             </div>
           </div>
