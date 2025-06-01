@@ -81,8 +81,10 @@ export default function Header() {
 
         {/* CTA Button */}
         <div className="hidden md:flex">
-          <Link href={"/contact"} className="bg-gradient-to-r from-blue-500 to-blue-900 hover:from-blue-900 hover:to-blue-500 text-white cursor-pointer transition-all duration-300">
-            Get Started
+          <Link href="/contact" passHref legacyBehavior>
+            <Button className="bg-gradient-to-r from-blue-500 to-blue-900 hover:from-blue-900 hover:to-blue-500 text-white cursor-pointer transition-all duration-300">
+              Get Started
+            </Button>
           </Link>
         </div>
 

@@ -28,20 +28,20 @@ const heroSlides = [
     ctaLink: "/services/education",
   },
   {
-    title: "High-Performance Communication Solutions",
+    title: "Top Communication Solutions",
     subtitle: "COMMTECH SYSTEMS",
     description:
       "Empower your business with our bulk SMS vending platform that delivers fast, reliable, and trackable messaging at scale.",
-    backgroundImage: "/images/bg1.jpg",
+    backgroundImage: "/images/commtech.jpg",
     ctaText: "Discover Commtech Services",
     ctaLink: "/services/commtech",
   },
   {
-    title: "Smart Courier Management Platform",
+    title: "Courier Management Platforms",
     subtitle: "COURIERTECH SYSTEMS",
     description:
       "Streamline your delivery operations with advanced tracking, route optimization, and automated notifications through Kouria.",
-    backgroundImage: "/images/agritech.jpg",
+    backgroundImage: "/images/couriertech2.jpg",
     ctaText: "Learn About Couriertech",
     ctaLink: "/services/couriertech",
   },
