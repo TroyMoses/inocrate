@@ -12,7 +12,6 @@ import {
   BarChart3,
   Shield,
   CheckCircle,
-  ArrowRight,
   Package,
   Users,
   Zap,
@@ -22,11 +21,11 @@ import Image from "next/image";
 
 const heroSlides = [
   {
-    title: "Smart Courier Management Platform",
+    title: "Courier Management Platforms",
     subtitle: "COURIERTECH SYSTEMS (KOURIA)",
     description:
       "Streamline your delivery operations with advanced tracking, route optimization, and automated notifications through our comprehensive courier management platform.",
-    backgroundImage: "/placeholder.svg?height=600&width=1200",
+    backgroundImage: "/images/couriertech.jpg",
     ctaText: "Explore Kouria Platform",
     ctaLink: "/contact",
   },
@@ -35,7 +34,7 @@ const heroSlides = [
     subtitle: "DIGITAL DELIVERY SOLUTIONS",
     description:
       "Transform your courier business with intelligent route planning, real-time tracking, and seamless communication between dispatchers, couriers, and customers.",
-    backgroundImage: "/placeholder.svg?height=600&width=1200",
+    backgroundImage: "/images/couriertech2.jpg",
     ctaText: "Get Started Today",
     ctaLink: "/contact",
   },
@@ -121,7 +120,7 @@ const solutions = [
     title: "Last-Mile Delivery Platform",
     description:
       "Complete last-mile delivery solution with customer communication, proof of delivery, and real-time tracking.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/images/couriertech.jpg",
     features: [
       "Customer portal",
       "Delivery scheduling",
@@ -133,7 +132,7 @@ const solutions = [
     title: "Fleet Management System",
     description:
       "Comprehensive fleet management with vehicle tracking, maintenance scheduling, and driver management.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/images/couriertech2.jpg",
     features: [
       "Vehicle tracking",
       "Maintenance alerts",
@@ -145,7 +144,7 @@ const solutions = [
     title: "E-commerce Integration",
     description:
       "Seamless integration with e-commerce platforms for automated order processing and fulfillment.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/images/couriertech.jpg",
     features: [
       "API integration",
       "Order automation",
@@ -187,16 +186,16 @@ export default function CouriertechPage() {
       <HeroCarousel slides={heroSlides} />
 
       {/* Overview Section */}
-      <section className="py-20">
+      <section className="py-8 md:py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Badge className="bg-gradient-to-r from-orange-500 to-red-600 text-white mb-4">
+              <Badge className="bg-gradient-to-r from-blue-700 to-blue-900 text-white mb-4">
                 COURIERTECH SOLUTIONS
               </Badge>
-              <h2 className="text-4xl font-bold mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 Transforming{" "}
-                <span className="bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent">
                   Logistics & Delivery
                 </span>
               </h2>
@@ -212,16 +211,16 @@ export default function CouriertechPage() {
                 our platform scales to meet your needs while providing real-time
                 visibility and control over your entire delivery operation.
               </p>
-              <Button className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white">
+              <Button className="bg-gradient-to-r from-blue-700 to-blue-900 hover:from-orange-600 hover:to-red-700 text-white">
                 <Link href="/contact">Get Started Today</Link>
               </Button>
             </div>
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-red-600 rounded-lg transform rotate-3"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-blue-900 rounded-lg transform rotate-3"></div>
               <Image
                 width={600}
                 height={400}
-                src="/placeholder.svg?height=400&width=600"
+                src="/images/couriertech2.jpg"
                 alt="Courier management platform"
                 className="relative rounded-lg shadow-lg w-full"
               />
@@ -231,15 +230,15 @@ export default function CouriertechPage() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-8 md:py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <Badge className="bg-gradient-to-r from-orange-500 to-red-600 text-white mb-4">
+          <div className="text-center mb-8">
+            <Badge className="bg-gradient-to-r from-blue-700 to-blue-900 text-white mb-4">
               OUR FEATURES
             </Badge>
-            <h2 className="text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Comprehensive Courier{" "}
-              <span className="bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent">
                 Management Features
               </span>
             </h2>
@@ -249,14 +248,14 @@ export default function CouriertechPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
             {features.map((feature, index) => (
               <Card
                 key={index}
                 className="group hover:shadow-xl transition-all duration-300 border-0 bg-white"
               >
                 <CardContent className="p-8">
-                  <div className="w-16 h-16 rounded-lg bg-gradient-to-r from-orange-500 to-red-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <div className="w-16 h-16 rounded-lg bg-gradient-to-r from-blue-700 to-blue-900 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                     <feature.icon className="h-8 w-8 text-white" />
                   </div>
                   <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
@@ -267,7 +266,7 @@ export default function CouriertechPage() {
                         key={idx}
                         className="flex items-center text-sm text-gray-600"
                       >
-                        <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                        <CheckCircle className="h-4 w-4 text-blue-700 mr-2" />
                         {benefit}
                       </li>
                     ))}
@@ -280,15 +279,15 @@ export default function CouriertechPage() {
       </section>
 
       {/* Solutions Section */}
-      <section className="py-20">
+      <section className="py-8 md:py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="bg-gradient-to-r from-orange-500 to-red-600 text-white mb-4">
+            <Badge className="bg-gradient-to-r from-blue-700 to-blue-900 text-white mb-4">
               OUR SOLUTIONS
             </Badge>
-            <h2 className="text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Tailored Solutions for{" "}
-              <span className="bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent">
                 Every Delivery Need
               </span>
             </h2>
@@ -298,29 +297,23 @@ export default function CouriertechPage() {
             {solutions.map((solution, index) => (
               <div
                 key={index}
-                className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
+                className={`grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-10 items-center ${
                   index % 2 === 1 ? "lg:grid-flow-col-dense" : ""
                 }`}
               >
                 <div className={index % 2 === 1 ? "lg:col-start-2" : ""}>
-                  <h3 className="text-3xl font-bold mb-4">{solution.title}</h3>
+                  <h3 className="text-2xl font-bold mb-4">{solution.title}</h3>
                   <p className="text-gray-600 mb-6 leading-relaxed">
                     {solution.description}
                   </p>
                   <ul className="space-y-3 mb-8">
                     {solution.features.map((feature, idx) => (
                       <li key={idx} className="flex items-center">
-                        <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
+                        <CheckCircle className="h-5 w-5 text-blue-500 mr-3" />
                         <span>{feature}</span>
                       </li>
                     ))}
                   </ul>
-                  <Button
-                    variant="outline"
-                    className="group hover:bg-gradient-to-r hover:from-orange-500 hover:to-red-600 hover:text-white hover:border-transparent transition-all"
-                  >
-                    Learn More <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
                 </div>
                 <div className={index % 2 === 1 ? "lg:col-start-1" : ""}>
                   <Image
@@ -338,10 +331,10 @@ export default function CouriertechPage() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-gradient-to-r from-orange-500 to-red-600 text-white">
+      <section className="py-8 md:py-16 bg-gradient-to-r from-blue-700 to-blue-900 text-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Why Choose Kouria Platform?
             </h2>
             <p className="text-xl text-orange-100 max-w-3xl mx-auto">
@@ -365,29 +358,29 @@ export default function CouriertechPage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20">
+      <section className="py-8 md:py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-orange-500 mb-2">
+              <div className="text-3xl md:text-4xl md:text-5xl font-bold text-blue-500 mb-2">
                 50K+
               </div>
               <div className="text-gray-600">Deliveries Daily</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-orange-500 mb-2">
+              <div className="text-3xl md:text-4xl md:text-5xl font-bold text-blue-500 mb-2">
                 35%
               </div>
               <div className="text-gray-600">Faster Delivery</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-orange-500 mb-2">
+              <div className="text-3xl md:text-4xl md:text-5xl font-bold text-blue-500 mb-2">
                 99.5%
               </div>
               <div className="text-gray-600">Delivery Accuracy</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-orange-500 mb-2">
+              <div className="text-3xl md:text-4xl md:text-5xl font-bold text-blue-500 mb-2">
                 500+
               </div>
               <div className="text-gray-600">Active Couriers</div>
@@ -397,10 +390,10 @@ export default function CouriertechPage() {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-8 md:py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6">How Kouria Works</h2>
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">How Kouria Works</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Simple, efficient workflow that transforms your delivery
               operations
@@ -431,7 +424,7 @@ export default function CouriertechPage() {
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-to-r from-blue-700 to-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold text-xl">3</span>
               </div>
               <h3 className="text-xl font-bold mb-3">Route Optimization</h3>
@@ -456,9 +449,9 @@ export default function CouriertechPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-8 md:py-16 bg-gray-50">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Revolutionize Your Deliveries?
           </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
@@ -469,7 +462,7 @@ export default function CouriertechPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
-              className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white"
+              className="bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-700 hover:to-blue-900 text-white"
             >
               <Link href="/contact">Start Free Trial</Link>
             </Button>
